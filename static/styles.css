@@ -1,3 +1,13 @@
+:root {
+    background-color: #192025;
+}
+
 h1 {
-    font-size: 200px;
+    font-size: 100px;
+}
+
+.main-page-title {
+    justify-content: center;
+    align-items: center;
+    color: white;
 }
