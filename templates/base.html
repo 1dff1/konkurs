@@ -8,19 +8,17 @@
     <title>{% block title %}{% endblock %}</title>
     <meta charset="utf-8">
 </head>
+
 <body>
     <div class="main-page-title">
         <div class="title-container">
-            <div class="nav-buttons">
-                <a href="/" class="nav-btn">Главная</a>
-                <a href="/memory" class="nav-btn">Мемориалы</a>
-                <a href="/history" class="nav-btn">История</a>
-            </div>
-            <h1>{% block pagetitle %}{% endblock %}</h1>
+            {% block pagetitle %}{% endblock %}
         </div>
     </div>
     <main>
         {% block content %}{% endblock %}
     </main>
+    <a href="/" class="floating-home-btn">На главную</a>
 </body>
+
 </html>
